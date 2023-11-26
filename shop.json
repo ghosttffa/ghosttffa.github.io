@@ -1,0 +1,83 @@
+[
+  {
+    "id": "1",
+    "title": "Анастасия Лисицына",
+    "vendor_code": "111",
+    "description": "г. Санкт-Петербург",
+    "price": "10 лет" ,
+    "img": "ал.jpg"
+  },
+  {
+    "id": "2",
+    "title": "Римма Чернова",
+    "vendor_code": "222",
+    "description": "г. Москва",
+    "price": "4 года",
+    "img": "рч.jpg"
+  },
+  {
+    "id": "3",
+    "title": "Даша Казаринова",
+    "vendor_code": "333",
+    "description": "г. Москва",
+    "price": "6 лет",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/January2023/thumbnails/576/OwXD2uBLXA3friZD0Jsl.jpg?1674846388"
+  },
+  {
+    "id": "4",
+    "title": "Анна Ручкинова",
+    "vendor_code": "444е",
+    "description": "г. Ярославль",
+    "price": "7 лет",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/February2023/thumbnails/576/fRlZvtJXTS2eQQwGUd5F.jpg?1676009877"
+  }
+  ,
+  {
+    "id": "5",
+    "title": "Анастасия Котова",
+    "vendor_code": "4445e",
+    "description": "г. Москва",
+    "price": "6 лет",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/March2021/thumbnails/576/YfYT1v5SU2cF1u8rL3xC.jpg?1617137444"
+  },
+  {
+    "id": "6",
+    "title": "Ксения Сорока",
+    "vendor_code": "4446e",
+    "description": "г. Иркутск",
+    "price": "3 года",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/February2023/thumbnails/576/kk2njkEdMslNx0fXOYIv.jpg?1677595053"
+  },
+  {
+    "id": "7",
+    "title": "Злата Столярова",
+    "vendor_code": "4447e",
+    "description": "г. Санкт-Петербург",
+    "price": "12 лет",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/November2022/thumbnails/576/qfTGT89bEKcFT2tww1dd.jpg?1668333519"
+  },
+  {
+    "id": "8",
+    "title": "Алиса Гречкина",
+    "vendor_code": "4448e",
+    "description": "г. Москва",
+    "price": "4 года",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/February2023/thumbnails/576/iNUWOPj5GDzYBHu1AaZs.jpg?1677606534"
+  },
+  {
+    "id": "9",
+    "title": "Жанна Жицкая",
+    "vendor_code": "4449e",
+    "description": "г. Москва",
+    "price": "5 лет",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/February2023/thumbnails/576/H5JNLPkrb6qsPJCkI8iC.jpg?1676479772"
+  },
+  {
+    "id": "10",
+    "title": "Инна Князева",
+    "vendor_code": "4450e",
+    "description": "г. Москва",
+    "price": "9 лет",
+    "img": "https://top100awards.ru/storage/persons/avatar-square/March2023/thumbnails/576/sfttl3tngeD6lhBkCrtN.jpg?1677706385"
+  }
+]
