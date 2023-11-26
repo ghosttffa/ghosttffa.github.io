@@ -33,7 +33,7 @@
 <body>
     <header>
         <nav id="navigation" class="container">
-            <ul class="nav">
+            <ul class="nav nav-tabs">
                 <li class="nav-item">
                     <a class="nav-link" href="main.html">О моде</a>
                 </li>
@@ -49,11 +49,14 @@
                 <li>
                     <a class="nav-link" href="culture.html">Мода и культура</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blocks.html">Заказ</a>
+                </li>
                 <li>
                     <a class="nav-link" href="forms.html">Форма</a>
                 </li>
                 <li>
-                    <a class="nav-link" href="forms2.html">Форма2</a>
+                    <a class="nav-link active" href="forms2.html">Форма2</a>
                 </li>
             </ul>
         </nav>
@@ -64,52 +67,71 @@
         <p class="lead text-secondary">
         </p>
     </div>
-    <div class="container">
-        <form action="" method="get" target="_self" onsubmit="return submitForm(); getSelectedOption();" id="form" autocomplete="on">
-            <fieldset>
-                <p>Имя: <input type="Text" name="name" placeholder="Сидоров Иван Иванович" size="30" id="name"></p>
-                <p>Номер телефона: <input type="Number" name="phone" placeholder="8999999999" size="11"></p>
-                <p>Дата посещения: <input type="date" name="date" placeholder="" size="30" id="date"></p>
 
-                <br>
-                <br>
-                <p>Возраст: <input type="number" name="age" placeholder="20" size="3"></p>
-                <p>Любимый стиль:
-                    <select>
-                        <option>Грандж</option>
-                        <option>Бохо</option>
-                        <option>Кэжуал</option>
-                    </select>
-                </p>
-                <p>Каких дизайнеров вы бы хотели встретить ? <input type="text" name="suggestions" size="20" id="suggestions"></p>
+    <div class="container">
+        <form class="form-control" action="" method="get" target="_self" onsubmit="return submitForm(); getSelectedOption();" id="form" autocomplete="on">
+            <fieldset>
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Имя" id="name">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Фамилия" id="name">
+                  </div>
+                </div>
+                <p>Номер телефона: <input class="form-control" type="Number" name="phone" placeholder="8999999999" size="11"></p>
+                <p>Дата посещения: <input class="form-control" type="date" name="date" placeholder="" size="30" id="date"></p>
+                <p>Возраст: <input class="form-control" type="number" name="age" placeholder="20" size="3"></p>
+
+                <div class="form-floating">
+                  <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                    <option selected>Любимый стиль:</option>
+                    <option value="1">Грандж</option>
+                    <option value="2">Бохо</option>
+                    <option value="3">Кэжуал</option>
+                  </select>
+                </div>
+
+                <p>Каких дизайнеров вы бы хотели встретить ? <input class="form-control" type="text" name="suggestions" size="20" id="suggestions" style="height: 100px"></p>
                 <br>
                 <br>
 
                 <p>Почему Вы выбрали именно нас ?</p>
-
-                <input type="checkbox" id="option1" name="why" value="option1">
-                <label>Недалеко от дома</label><br>
-                <input type="checkbox" id="option2" name="why" value="option2">
-                <label>Увидел рассылку</label><br>
-                <input type="checkbox" id="option3" name="why" value="option3">
-                <label>Посоветовали</label><br>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="option1" name="why" value="option1">
+                  <label class="form-check-label" for="option1">
+                    Недалеко от дома
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="option2" name="why" value="option2">
+                  <label class="form-check-label" for="option2">
+                    Увидел рассылку
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="option3" name="why" value="option2">
+                  <label class="form-check-label" for="option3">
+                    Посоветовали
+                  </label>
+                </div>
                 <br>
-                <br>
-                <p>Вы будете рекомендовать нас ?</p>
-                <input type="radio" id="yes" name="rec" value="Да">
-                <label type="radio" for="rec" id="yes">Да</label> <br>
-                <input type="radio" id="no" name="rec" value="Нет">
-                <label type="radio" for="rec" id="no">Нет</label> <br>
-                <br>
+                <p>Вы будете рекомендовать нас?</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="yes" name="rec" value="Да">
+                    <label class="form-check-label" type="radio" for="rec" id="yes">Да</label> <br>
+                    <input class="form-check-input" type="radio" id="no" name="rec" value="Нет">
+                    <label class="form-check-label" type="radio" for="rec" id="no">Нет</label> <br>
+                </div>
                 <p>Какую сумму Вы бы потратили на дизайнерскую вещь?</p>
-                <input type="radio" id="more_100" name="summ" value="Да">
-                <label type="radio" for="rec" id="yes">Больше 100 у.е.</label> <br>
-                <input type="radio" id="les_100" name="summ" value="Нет">
-                <label type="radio" for="rec" id="no">Меньше 100 у.е.</label> <br>
+                <input class="form-check-input" type="radio" id="more_100" name="summ" value="Да">
+                <label class="form-check-label" type="radio" for="rec" id="yes">Больше 100 у.е.</label> <br>
+                <input class="form-check-input" type="radio" id="les_100" name="summ" value="Нет">
+                <label class="form-check-label" type="radio" for="rec" id="no">Меньше 100 у.е.</label> <br>
 
 
-                <p><input type="Reset" name="Reset" value="Очистить">
-                    <input type="Submit" name="submit" value="Отправить" class="Button" id="submit">
+                <p><input class="btn btn-primary" type="Reset" name="Reset" value="Очистить">
+                    <input class="btn btn-primary" type="Submit" name="submit" value="Отправить" class="Button" id="submit">
                 </p>
 
             </fieldset>
